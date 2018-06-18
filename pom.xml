@@ -64,6 +64,26 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ru.lanwen.wiremock</groupId>
+            <artifactId>wiremock-junit5</artifactId>
+            <version>1.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.mockito</groupId>
@@ -73,16 +93,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.tomakehurst</groupId>
-            <artifactId>wiremock</artifactId>
-            <version>1.50</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${version.log4j2}</version>
+            <groupId>com.github.JensPiegsa</groupId>
+            <artifactId>wiremock-extension</artifactId>
+            <version>0.1.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -144,5 +157,11 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
 </project>
