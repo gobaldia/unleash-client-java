@@ -6,8 +6,8 @@ import java.util.Map;
 import com.google.gson.JsonObject;
 
 public class TestDefinition {
-    public String name;
-    public JsonObject state;
+    private String name;
+    private JsonObject state;
 
     public String getName() {
         return name;
